@@ -11,3 +11,5 @@ class Topic extends Model
     protected $table = 'topics';
     protected $guarded = [];
 }
+
+// test fo pull request
