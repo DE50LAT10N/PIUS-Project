@@ -10,6 +10,11 @@ class Topic extends Model
     use HasFactory;
     protected $table = 'topics';
     protected $guarded = [];
+
+    public function steps()
+    {
+        return $this ->hasMany(Step::class, 'course_id', 'id');
+    }
 }
 
 // test fo pull request

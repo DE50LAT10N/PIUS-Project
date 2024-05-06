@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('stepName');
             $table->timestamps();
 
-            $table->foreign('course_id')->references('id')->on('topics');
+            $table->foreign('course_id','course_id_fk')->references('id')->on('topics');
         });
     }
 
